@@ -21,21 +21,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#ifdef RGBLIGHT_ENABLE
-#    define RGBLIGHT_EFFECT_BREATHING
-#    define RGBLIGHT_EFFECT_RAINBOW_MOOD
-#    define RGBLIGHT_EFFECT_RAINBOW_SWIRL
-#    define RGBLIGHT_EFFECT_SNAKE
-#    define RGBLIGHT_EFFECT_KNIGHT
-#    define RGBLIGHT_EFFECT_CHRISTMAS
-#    define RGBLIGHT_EFFECT_STATIC_GRADIENT
-#    define RGBLIGHT_EFFECT_RGB_TEST
-#    define RGBLIGHT_EFFECT_ALTERNATING
-#    define RGBLIGHT_EFFECT_TWINKLE
-#    define RGBLIGHT_HUE_STEP 6 // number of steps to cycle through the hue by
-#    define RGBLIGHT_SAT_STEP 6 // number of steps to increment the saturation by
-#    define RGBLIGHT_VAL_STEP 6 // number of steps to increment the brightness by
-#    define RGBLIGHT_SLEEP      //  the RGB lighting will be switched off when the host goes to sleep
+#ifdef RGB_MATRIX_ENABLE
+#    define RGB_MATRIX_LED_COUNT 70
+#    define RGB_MATRIX_SPLIT { 35, 35 }
+#    define RGB_MATRIX_KEYPRESSES
+#    define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
+#    define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
+#    define ENABLE_RGB_MATRIX_BREATHING
+#    define ENABLE_RGB_MATRIX_HUE_WAVE
+#    define ENABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
+#    define ENABLE_RGB_MATRIX_RAINBOW_BEACON
+#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
+#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE
+#    define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_GRADIENT_LEFT_RIGHT
+#    define RGB_MATRIX_HUE_STEP 6
+#    define RGB_MATRIX_SAT_STEP 6
+#    define RGB_MATRIX_VAL_STEP 6
+#    define RGB_MATRIX_SPD_STEP 6
+#    define RGB_MATRIX_SLEEP
 #endif
 
 // If you are using an Elite C rev3 on the slave side, uncomment the lines below:
